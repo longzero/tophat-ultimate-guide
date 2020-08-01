@@ -1,0 +1,27 @@
+/* Generated on: Sat Aug 01 2020 12:56:29 GMT-0400 (GMT-04:00) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #ddd;
+  color: #231f20;
+  font-family: "Apercu", sans-serif;
+  font-weight: 300;
+  line-height: 1; }
+
+button {
+  cursor: pointer; }
+
+a {
+  color: #231f20;
+  cursor: pointer;
+  transition: 3s; }
+
+iframe, img, video {
+  max-width: 100%; }

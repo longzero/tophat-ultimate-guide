@@ -12,11 +12,11 @@ gulp.task('styles', function() {
   return gulp.src('src/css/styles.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(header('/* Generated on: ' + new Date() + ' */\n'))
-    .pipe(gulp.dest('public/css/'))
+    .pipe(gulp.dest('docs/css/'))
     .pipe(minify({minify: true, minifyCSS: true}))
     .pipe(header('/* Generated on: ' + new Date() + ' */\n'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('public/css/'));
+    .pipe(gulp.dest('docs/css/'));
 });
 
 
