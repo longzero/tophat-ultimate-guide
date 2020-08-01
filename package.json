@@ -2,6 +2,7 @@
   "name": "gulp",
   "version": "0.0.1",
   "devDependencies": {
+  	"clean-css": "^4.1.11",
     "gulp": "^4.0.0",
     "gulp-header": "^1.8.8",
     "gulp-minifier": "^0.2.1",
