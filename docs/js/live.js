@@ -31,7 +31,7 @@
       oldLinkElements = {},
       interval = 1000,
       loaded = false,
-      active = { "html": 0, "css": 1, "js": 0 };
+      active = { "html": 1, "css": 1, "js": 1 };
 
   console.log("live.js#html: " + active.html)
   console.log("live.js#css: " + active.css)
