@@ -1,27 +1,61 @@
-/* Generated on: Sat Aug 01 2020 12:56:29 GMT-0400 (GMT-04:00) */
+/* Generated on: Sat Aug 01 2020 18:24:13 GMT-0400 (GMT-04:00) */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
   scroll-behavior: smooth; }
 
 body {
-  background-color: #ddd;
-  color: #231f20;
-  font-family: "Apercu", sans-serif;
-  font-weight: 300;
+  background-color: #fff;
+  color: #000;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
   line-height: 1; }
+
+a {
+  color: #000;
+  cursor: pointer; }
 
 button {
   cursor: pointer; }
 
-a {
-  color: #231f20;
-  cursor: pointer;
-  transition: 3s; }
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem; }
 
 iframe, img, video {
   max-width: 100%; }
+
+p, ul, ol {
+  margin-bottom: 1rem; }
+
+body {
+  margin: size(20); }
+
+.button {
+  background-color: #E5166B;
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 8px 20px;
+  text-decoration: none; }
+
+.cta-full {
+  background-color: #eee;
+  font-size: 1.44444rem;
+  font-size: 1.77778rem;
+  margin: 0 auto 20px;
+  text-align: center;
+  min-height: 311px;
+  width: calc(100% - 2 * 20px); }
+  @media (min-width: 768px) {
+    .cta-full {
+      margin-bottom: 0;
+      width: 100%; } }
+
+.h-center, .cta-full {
+  display: flex;
+  align-items: center;
+  justify-content: center; }

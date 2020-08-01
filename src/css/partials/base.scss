@@ -10,20 +10,24 @@ html {
 }
 
 body {
-	background-color: #ddd;
+	background-color: #fff;
 	color: $color-copy;
 	font-family: $font-default;
 	font-weight: $font-weight;
 	line-height: 1;
 }
-button {
-	cursor: pointer;
-}
 
 a {
 	color: $color-copy;
 	cursor: pointer;
-	transition: 3s;
+}
+
+button {
+	cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom: 1rem;
 }
 
 iframe,img,video {
@@ -42,9 +46,9 @@ iframe,img,video {
 // 	display: block;
 // }
 
-// p,ul,ol {
-// 	margin-bottom: 1em;
-// }
+p,ul,ol {
+	margin-bottom: 1rem;
+}
 
 // ul,ol {
 // 	margin-left: 0;

@@ -2,3 +2,53 @@
 
 @import 'partials/variables';
 @import 'partials/base';
+
+
+// Convert to px to rem
+@function rem($size) {
+  @return $size / strip-unit($font-size) * 1rem;
+}
+
+// Remove the unit of a length
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+body {
+  margin: size(20);
+}
+
+.button {
+	background-color: $color-3;
+	color: #fff;
+	display: inline-block;
+	font-size: 1rem;
+	padding: 8px 20px;
+	text-decoration: none;
+}
+
+
+.cta-full {
+	@extend .h-center;
+	background-color: #eee;
+	font-size: rem(26);
+	font-size: rem(32);
+	margin: 0 auto $site-margin;
+	text-align: center;
+	min-height: 311px;
+	width: calc(100% - 2 * #{$site-margin});
+
+	@media (min-width: $breakpoint-ipad) {
+		margin-bottom: 0;
+		width: 100%;
+	}
+}
+
+.h-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

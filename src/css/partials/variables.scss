@@ -16,20 +16,20 @@ $breakpoint-hd: 1900px;
 
 
 // FONTS
-$font-default: 'Apercu', sans-serif;
-$font-family: 'Apercu', sans-serif;
-$font-magazine-heading: 'Libre Baskerville', serif;
-$font-magazine-title: 'Frank Ruhl Libre', serif;
+$font-default: 'Source Sans Pro';
+$font-family: 'Source Sans Pro';
 $font-line-height: 1.2;
-$font-size: 20px;
-$font-weight: 300;
+$font-size: 18px;
+$font-weight: 400;
 $font-semibold: 600;
 $font-bold: bold;
 
 
 // COLORS
 // Basic colours
-$color-copy: #231f20;
+$color-1: #934AF4;
+$color-2: #AAEDD1;
+$color-3: #E5166B;
 
 // Brands
 $color-facebook: #3b5998;
@@ -41,10 +41,12 @@ $color-twitter: #1da1f2;
 $color-youtube: #ff0000;
 
 // Specific colours
-$color-hover: #ff7062;
-$color-link: inherit;
-$color-link-underline: #ff7062;
+$color-active: $color-2;
+$color-copy: #000;
+$color-hover: $color-1;
+$color-link: $color-3;
 
 
 // OTHER VARIABLES
 $layer-header: 100;
+$site-margin: 20px;
