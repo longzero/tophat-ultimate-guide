@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: $font-size;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #ddd;
+	color: $color-copy;
+	font-family: $font-default;
+	font-weight: $font-weight;
+	line-height: 1;
+}
+button {
+	cursor: pointer;
+}
+
+a {
+	color: $color-copy;
+	cursor: pointer;
+	transition: 3s;
+}
+
+iframe,img,video {
+	max-width: 100%;
+}
+
+// iframe {
+// 	display: block;
+// }
+
+// img,video {
+// 	height: auto;
+// }
+
+// main {
+// 	display: block;
+// }
+
+// p,ul,ol {
+// 	margin-bottom: 1em;
+// }
+
+// ul,ol {
+// 	margin-left: 0;
+// }
