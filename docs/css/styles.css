@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 02 2020 15:11:01 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 02 2020 15:23:11 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -259,7 +259,7 @@ p, ul, ol {
       display: block;
       position: absolute;
       top: 0;
-      right: calc(100% / 12 * 2); } }
+      right: calc(100% / 12 * 2 - .7 * 20px); } }
 
 .page-section-header-image {
   margin-bottom: -95px; }
@@ -374,6 +374,9 @@ p, ul, ol {
 
 .h-font-size-42, .page-section-title {
   font-size: 2.33333rem; }
+
+.h-margin-0 {
+  margin: 0; }
 
 .h-text-center {
   text-align: center; }
