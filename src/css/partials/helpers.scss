@@ -1,0 +1,25 @@
+.h-section-background {
+	background-color: $color-section-background;
+}
+
+.h-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.h-font-size-26 {
+	font-size: rem(strip-unit($font-size-26));
+}
+
+.h-font-size-32 {
+	font-size: rem(strip-unit($font-size-32));
+}
+
+.h-font-size-42 {
+	font-size: rem(strip-unit($font-size-42));
+}
+
+.h-text-center {
+	text-align: center;
+}

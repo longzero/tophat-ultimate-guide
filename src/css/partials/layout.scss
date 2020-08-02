@@ -1,0 +1,29 @@
+.columns {
+	@media (min-width: $breakpoint-ipad) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.column-50 {
+	@media (min-width: $breakpoint-ipad) {
+		flex: 0 0 50%;
+		width: 50%;
+
+		&:nth-child(n+2) {
+			padding-left: 40px;
+		}
+	}
+
+	h3 {
+		color: $color-1;
+		font-weight: $font-semibold;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 $site-margin;
+	max-width: $site-width;
+	width: 100%;
+}

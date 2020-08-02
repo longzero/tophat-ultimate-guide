@@ -63,6 +63,10 @@ iframe,img,video {
 p,ul,ol {
 	line-height: 1.5;
 	margin-bottom: 1rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 // ul,ol {

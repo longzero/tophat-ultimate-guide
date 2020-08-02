@@ -1,199 +1,26 @@
-// @import 'partials/default.scss';
 
+// SETTINGS
 @import 'partials/variables';
+
+ // TOOLS
+// @import 'partials/default.scss';
 @import 'partials/functions';
+
+// ELEMENTS
 @import 'partials/base';
 
-body {
-  // margin: size(20);
-}
+// OBJECTS
+@import 'partials/layout';
 
-.button {
-	background-color: $color-3;
-	color: #fff;
-	display: inline-block;
-	font-size: 1rem;
-	padding: 8px 20px;
-	text-decoration: none;
-}
+// COMPONENTS
+@import 'partials/callout-box';
+@import 'partials/color-box';
+@import 'partials/cta';
+@import 'partials/media-content-box';
+@import 'partials/page-section';
+@import 'partials/page-section-header';
+@import 'partials/site';
 
-.column-50 {
-	h3 {
-		color: $color-1;
-		font-weight: $font-semibold;
-	}
-}
+// TRUMPS
+@import 'partials/helpers';
 
-.cta-full {
-	@extend .h-center;
-	background-color: #eee;
-	font-size: rem(26);
-	font-weight: bold;
-	margin: 0 auto $site-margin;
-	padding: 20px;
-	text-align: center;
-	min-height: 311px;
-	width: calc(100% - 2 * #{$site-margin});
-
-	@media (min-width: $breakpoint-ipad) {
-		font-size: rem(32);
-		margin-bottom: 0;
-		width: 100%;
-	}
-
-	p {
-		line-height: 1.27;
-	}
-}
-
-.page-section-column--media {
-	margin-bottom: $site-margin;
-}
-
-.page-section-header {
-	background-image: url(../images/green-grid.png);
-	background-position: -93px 0;
-	background-repeat: no-repeat;
-	margin-bottom: 50px;
-	padding-top: 10px;
-	position: relative;
-
-	@media (min-width: $breakpoint-desktop) {
-		background-position: 0 0;
-		margin: 0 auto 150px;
-		padding-top: 100px;
-		max-width: 1174px;
-		min-height: 1010px; // A little more than the height of green grid.
-	}
-}
-
-.page-section-header-image {
-	margin-bottom: -95px;
-
-	@media (min-width: $breakpoint-desktop) {
-		position: absolute;
-		top: 160px;
-		right: 50%;
-	}
-}
-
-.page-section-introduction {
-	background-color: #fff;
-	border: 1px solid $color-2;
-	font-size: rem(24);
-	margin: 0 auto 30px;
-	padding: 30px;
-	position: relative;
-	z-index: 1;
-	max-width: 607px;
-	width: calc(100% - 2 * #{$site-margin});
-}
-
-.page-section-label {
-	@extend .h-center;
-	color: #000;
-	font-size: 1rem;
-	position: absolute;
-	top: -75px;
-	left: 45px;
-	z-index: 1;
-	width: 120px;
-	height: 120px;
-
-	@media (min-width: $breakpoint-desktop) {
-		font-size: rem(24);
-		width: 160px;
-		height: 160px;
-	}
-
-	&:before,
-	&:after {
-		border-radius: 50%;
-		content: '';
-		display: block;
-		position: absolute;
-		z-index: -1;
-		width: 100%;
-		height: 100%;
-	}
-
-	&:before {
-		background-color: $color-1;
-		top: 13px;
-		left: 13px;
-	}
-
-	&:after {
-		background-color: #eee;
-		border: 1px solid #000;
-		top: 0;
-		left: 0;
-	}
-}
-
-.page-section-section {
-	padding-left: $site-margin;
-	padding-right: $site-margin;
-}
-
-.page-section-title {
-	@extend .h-font-size-42;
-	background-color: #000;
-	color: #fff;
-	margin: 0 auto;
-	padding: 75px 25px 50px;
-	position: relative;
-	width: calc(100% - 2 * #{$site-margin});
-
-	@media (min-width: $breakpoint-desktop) {
-		margin: 0 0 -200px auto;
-		padding: 165px 70px 260px 90px;
-		max-width: 680px;
-		width: 100%;
-	}
-
-	h1 {
-		font-size: rem(42);
-		margin-bottom: 0;
-
-		@media (min-width: $breakpoint-desktop) {
-			font-size: rem(55);
-			font-weight: bold;
-		}
-	}
-}
-
-.typography {
-	ol, ul {
-		list-style: none;
-	}
-	li {
-		padding-left: 15px;
-		position: relative;
-		&:before {
-			color: $color-2;
-			content: '•';
-			position: absolute;
-			top: 0;
-			left: 2px;
-		}
-	}
-}
-
-.h-center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.h-font-size-26 {
-	font-size: rem(strip-unit($font-size-26));
-}
-
-.h-font-size-32 {
-	font-size: rem(strip-unit($font-size-32));
-}
-
-.h-font-size-42 {
-	font-size: rem(strip-unit($font-size-42));
-}

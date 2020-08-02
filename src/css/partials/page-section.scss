@@ -1,0 +1,111 @@
+.page-section {
+	margin-bottom: 50px;
+
+	@media (min-width: $breakpoint-ipad) {
+		margin-bottom: 150px;
+	}
+}
+
+.page-section-column--content,
+.page-section-column--media {
+	@media (min-width: $breakpoint-ipad) {
+		flex: 0 0 calc(50% - calc(100% / 12));
+		margin-left: calc(100% / 12);
+		width: calc(50% - calc(100% / 12));
+	}
+}
+
+.page-section-column--content {
+	@media (min-width: $breakpoint-ipad) {
+		max-width: 480px;
+	}
+}
+
+.page-section-column--media {
+	margin-bottom: $site-margin;
+	position: relative;
+
+	@media (min-width: $breakpoint-ipad) {
+		margin-bottom: 0;
+	}
+}
+
+.page-section-grid-image {
+	position: absolute;
+	top: 0;
+	left: calc(#{$site-width} / 12 * -1);
+}
+
+.page-section-image {
+	@media (min-width: $breakpoint-ipad) {
+		position: sticky;
+		top: 0;
+
+		.page-section-section--reverse & {
+			float: right;
+		}
+	}
+}
+
+.page-section-image-60 {
+	@media (min-width: $breakpoint-ipad) {
+		padding-top: 60px;
+
+		.page-section-image {
+			margin-top: -60px;
+		}
+	}
+}
+
+svg.page-section-image {
+	@media (min-width: $breakpoint-ipad) {
+		.page-section-section--reverse & {
+			float: none;
+		}
+	}
+}
+
+.page-section-section {
+	margin-bottom: 50px;
+	padding-left: $site-margin;
+	padding-right: $site-margin;
+
+	@media (min-width: $breakpoint-site-width) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&.h-section-background {
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		@media (min-width: $breakpoint-ipad) {
+			padding-top: 150px;
+			padding-bottom: 150px;
+		}
+	}
+}
+
+.page-section-section,
+.page-section-section .container {
+	@media (min-width: $breakpoint-ipad) {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 150px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.page-section-section--reverse,
+.page-section-section--reverse .container {
+	@media (min-width: $breakpoint-ipad) {
+		flex-direction: row-reverse;
+
+		// .page-section-column--content {
+		// 	margin-left: calc(100% / 12);
+		// }
+	}
+}

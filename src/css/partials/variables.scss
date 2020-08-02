@@ -1,4 +1,8 @@
-$site-width: 1110px;
+// SITE SETTINGS
+// Used to calculate other variables
+$site-margin: 20px;
+$site-width: 1180px;
+
 
 // BREAKPOINTS
 $breakpoint-android: 360px;
@@ -14,6 +18,7 @@ $breakpoint-air: 1400px;
 $breakpoint-big: 1600px;
 $breakpoint-hd: 1900px;
 
+$breakpoint-site-width: $site-width + 2 * $site-margin;
 
 // FONTS
 $font-default: 'Source Sans Pro';
@@ -34,6 +39,8 @@ $font-bold: bold;
 $color-1: #934AF4;
 $color-2: #AAEDD1;
 $color-3: #E5166B;
+$color-4: #D9D9D9;
+$color-5: #EEE6FC;
 
 // Brands
 $color-facebook: #3b5998;
@@ -46,11 +53,11 @@ $color-youtube: #ff0000;
 
 // Specific colours
 $color-active: $color-2;
+$color-author-border: $color-4;
 $color-copy: #000;
 $color-hover: $color-1;
 $color-link: $color-3;
-
+$color-section-background: $color-5;
 
 // OTHER VARIABLES
 $layer-header: 100;
-$site-margin: 20px;

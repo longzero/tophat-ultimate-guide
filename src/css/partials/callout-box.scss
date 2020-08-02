@@ -1,0 +1,40 @@
+$callout-offset: 20px;
+
+.callout-box {
+	background-color: #fff;
+	border: 1px solid $color-2;
+	margin: 0 $site-margin;
+	padding: 35px 23px;
+	position: relative;
+	text-align: center;
+	width: calc(100% - #{$callout-offset} - 2 * #{$site-margin});
+
+	@media (min-width: $breakpoint-ipad) {
+		font-size: rem(36);
+		margin: 0 auto 150px;
+		padding: 100px 90px;
+		width: calc(100% - #{$callout-offset});
+	}
+
+	&:after {
+		background-color: $color-1;
+		content: '';
+		display: block;
+		position: absolute;
+		top: $callout-offset;
+		left: $callout-offset;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+	}
+
+	p {
+		&:first-child {
+			font-size: rem(14);
+
+			@media (min-width: $breakpoint-ipad) {
+				font-size: 1rem;
+			}
+		}
+	}
+}

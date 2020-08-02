@@ -1,0 +1,25 @@
+.button {
+	background-color: $color-3;
+	color: #fff;
+	display: inline-block;
+	font-size: 1rem;
+	padding: 8px 20px;
+	text-decoration: none;
+}
+
+.typography {
+	ol, ul {
+		list-style: none;
+	}
+	li {
+		padding-left: 15px;
+		position: relative;
+		&:before {
+			color: $color-2;
+			content: '•';
+			position: absolute;
+			top: 0;
+			left: 2px;
+		}
+	}
+}
