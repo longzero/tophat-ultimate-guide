@@ -32,8 +32,14 @@
 
 .page-section-grid-image {
 	position: absolute;
-	top: 0;
-	left: calc(#{$site-width} / 12 * -1);
+	top: 60px;
+	right: calc(#{$site-width} / 12 * -1);
+
+	.page-section-section--reverse & {
+		top: 0;
+		left: calc(#{$site-width} / 12 * -1);
+		right: auto;
+	}
 }
 
 .page-section-image {
@@ -96,6 +102,14 @@ svg.page-section-image {
 
 	&:last-child {
 		margin-bottom: 0;
+	}
+}
+
+.page-section-section--short-grid {
+	@media (min-width: $breakpoint-ipad) {
+		.page-section-column--media {
+			margin-bottom: 150px;
+		}
 	}
 }
 
