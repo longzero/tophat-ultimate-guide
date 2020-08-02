@@ -15,6 +15,20 @@
 	}
 }
 
+.page-section-header--no-background {
+	background-image: none;
+}
+
+.page-section-header-background-image {
+	display: none;
+	@media (min-width: $breakpoint-desktop) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: calc(100% / 12 * 2);
+	}
+}
+
 .page-section-header-image {
 	margin-bottom: -95px;
 
