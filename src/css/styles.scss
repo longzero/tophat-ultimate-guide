@@ -1,3 +1,5 @@
+// The management of the CSS is
+// a mixture of ITCSS and Atomic Design
 
 // SETTINGS
 @import 'partials/variables';
@@ -16,12 +18,12 @@
 @import 'partials/callout-box';
 @import 'partials/color-box';
 @import 'partials/cta';
-@import 'partials/info-box';
 @import 'partials/media-content-box';
 @import 'partials/page-header';
 @import 'partials/page-section';
 @import 'partials/page-section-header';
 @import 'partials/site';
+@import 'partials/sticky-scroll-navigation';
 
 // TRUMPS
 @import 'partials/helpers';
