@@ -29,12 +29,32 @@ $callout-offset: 20px;
 	}
 
 	p {
-		&:first-child {
+		&:first-child:not(:last-child) {
 			font-size: rem(14);
 
 			@media (min-width: $breakpoint-ipad) {
 				font-size: 1rem;
 			}
 		}
+	}
+}
+
+.callout-box--media {
+	border-color: $color-4;
+
+	@media (min-width: $breakpoint-ipad) {
+		margin-top: 300px;
+	}
+}
+
+.callout-box-image {
+	display: none;
+
+	@media (min-width: $breakpoint-ipad) {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, calc((50% + 20px) * -1));
 	}
 }

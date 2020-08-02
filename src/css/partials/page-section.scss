@@ -42,6 +42,14 @@
 	}
 }
 
+.page-section-grid-image--2 {
+	.page-section-section--reverse & {
+		top: 60px;
+		left: auto;
+		right: calc(#{$site-width} / 6 * -1);
+	}
+}
+
 .page-section-image {
 	@media (min-width: $breakpoint-ipad) {
 		position: sticky;
@@ -84,6 +92,14 @@ svg.page-section-image {
 	&.h-section-background {
 		padding-top: 40px;
 		padding-bottom: 40px;
+
+		+ .h-section-background {
+			margin-top: -50px;
+
+			@media (min-width: $breakpoint-ipad) {
+				margin-top: -350px;
+			}
+		}
 
 		@media (min-width: $breakpoint-ipad) {
 			padding-top: 150px;
