@@ -51,18 +51,41 @@ body {
 }
 
 .page-section-header {
+	background-image: url(../images/green-grid.png);
+	background-position: -93px 0;
+	background-repeat: no-repeat;
+	margin-bottom: 50px;
+	padding-top: 10px;
 	position: relative;
+
+	@media (min-width: $breakpoint-desktop) {
+		background-position: 0 0;
+		margin: 0 auto 150px;
+		padding-top: 100px;
+		max-width: 1174px;
+		min-height: 1010px; // A little more than the height of green grid.
+	}
 }
 
 .page-section-header-image {
 	margin-bottom: -95px;
+
+	@media (min-width: $breakpoint-desktop) {
+		position: absolute;
+		top: 160px;
+		right: 50%;
+	}
 }
 
 .page-section-introduction {
+	background-color: #fff;
 	border: 1px solid $color-2;
 	font-size: rem(24);
 	margin: 0 auto 30px;
 	padding: 30px;
+	position: relative;
+	z-index: 1;
+	max-width: 607px;
 	width: calc(100% - 2 * #{$site-margin});
 }
 
@@ -76,6 +99,12 @@ body {
 	z-index: 1;
 	width: 120px;
 	height: 120px;
+
+	@media (min-width: $breakpoint-desktop) {
+		font-size: rem(24);
+		width: 160px;
+		height: 160px;
+	}
 
 	&:before,
 	&:after {
@@ -116,9 +145,21 @@ body {
 	position: relative;
 	width: calc(100% - 2 * #{$site-margin});
 
+	@media (min-width: $breakpoint-desktop) {
+		margin: 0 0 -200px auto;
+		padding: 165px 70px 260px 90px;
+		max-width: 680px;
+		width: 100%;
+	}
+
 	h1 {
 		font-size: rem(42);
 		margin-bottom: 0;
+
+		@media (min-width: $breakpoint-desktop) {
+			font-size: rem(55);
+			font-weight: bold;
+		}
 	}
 }
 

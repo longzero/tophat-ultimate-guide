@@ -1,4 +1,4 @@
-/* Generated on: Sat Aug 01 2020 19:37:33 GMT-0400 (GMT-04:00) */
+/* Generated on: Sat Aug 01 2020 20:18:18 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -78,16 +78,37 @@ p, ul, ol {
   margin-bottom: 20px; }
 
 .page-section-header {
+  background-image: url(../images/green-grid.png);
+  background-position: -93px 0;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  padding-top: 10px;
   position: relative; }
+  @media (min-width: 991px) {
+    .page-section-header {
+      background-position: 0 0;
+      margin: 0 auto 150px;
+      padding-top: 100px;
+      max-width: 1174px;
+      min-height: 1010px; } }
 
 .page-section-header-image {
   margin-bottom: -95px; }
+  @media (min-width: 991px) {
+    .page-section-header-image {
+      position: absolute;
+      top: 160px;
+      right: 50%; } }
 
 .page-section-introduction {
+  background-color: #fff;
   border: 1px solid #AAEDD1;
   font-size: 1.33333rem;
   margin: 0 auto 30px;
   padding: 30px;
+  position: relative;
+  z-index: 1;
+  max-width: 607px;
   width: calc(100% - 2 * 20px); }
 
 .page-section-label {
@@ -99,6 +120,11 @@ p, ul, ol {
   z-index: 1;
   width: 120px;
   height: 120px; }
+  @media (min-width: 991px) {
+    .page-section-label {
+      font-size: 1.33333rem;
+      width: 160px;
+      height: 160px; } }
   .page-section-label:before, .page-section-label:after {
     border-radius: 50%;
     content: '';
@@ -128,9 +154,19 @@ p, ul, ol {
   padding: 75px 25px 50px;
   position: relative;
   width: calc(100% - 2 * 20px); }
+  @media (min-width: 991px) {
+    .page-section-title {
+      margin: 0 0 -200px auto;
+      padding: 165px 70px 260px 90px;
+      max-width: 680px;
+      width: 100%; } }
   .page-section-title h1 {
     font-size: 2.33333rem;
     margin-bottom: 0; }
+    @media (min-width: 991px) {
+      .page-section-title h1 {
+        font-size: 3.05556rem;
+        font-weight: bold; } }
 
 .typography ol, .typography ul {
   list-style: none; }
