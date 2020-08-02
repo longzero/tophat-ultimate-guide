@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 02 2020 17:55:34 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 02 2020 18:27:03 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -116,6 +116,21 @@ p, ul, ol {
       top: 0;
       left: 50%;
       transform: translate(-50%, calc((50% + 20px) * -1)); } }
+
+.callout-box--small {
+  border-color: #555;
+  margin: 0 0 45px;
+  text-align: left;
+  width: calc(100% - 20px); }
+  @media (min-width: 768px) {
+    .callout-box--small {
+      font-size: 1rem;
+      margin-bottom: 55px;
+      padding: 40px 35px; } }
+  .callout-box--small:after {
+    background-color: #AAEDD1;
+    top: 15px;
+    lefT: 15px; }
 
 .color-box {
   background-color: #934AF4;
