@@ -1,12 +1,11 @@
-/* Nav specific */
 .slider-nav { /* Default position is absolute */
-	display: block;
+	display: none;
 	position: absolute;
 	padding: 0;
 	top: 25px;
 	left: 0;
 	z-index: $layer-sticky-scroll-navigation;
-	width: 125px;
+	width: 250px;
 }
 
 .slider-nav__item {
@@ -14,44 +13,42 @@
 	align-items: center;
 	padding: 0 0 20px 0;
 	margin-bottom: 0;
+
+	&:hover,
+	&.active {
+		.dash {
+			background: $color-1;
+			margin-left: 5px;
+			margin-right: 20px;
+			width: 37px;
+			height: 4px;
+		}
+		.slider-links {
+			color: $color-1;
+			font-size: rem(14);
+			font-weight: bold;
+		}
+	}
 }
 
 .slider-links {
-	cursor: pointer;
-	float: right;
+	color: #333;
 	font-size: rem(12);
-	list-style-type: none;
-	margin: 0;
-	position: relative;
-	left: 30px;
-	width: 90%;
-}
-
-.slider-links:hover,
-.slider-nav__item.active {
-	color: $color-1;
-}
-
-.slider-nav__item.active {
-	font-size: rem(14);
-	font-weight: bold;
-}
-
-.slider-nav__item.active .dash {
-	background: $color-1;
-	margin-left: 5px;
-	width: 37px;
-	height: 4px;
+	transition-duration: .3s;
+	width: 25ch;
 }
 
 .dash {
 	background: $color-5;
-	float: left;
+	flex-shrink: 0;
+	margin-right: 15px;
+	transition-duration: .3s;
 	width: 22px;
 	height: 2px;
 }
 
 .fix-nav{ /* Active position is fixed */
+	display: block;
 	position: fixed;
 	top: 25px;
 	right:0;

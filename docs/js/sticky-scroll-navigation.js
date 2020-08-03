@@ -3,49 +3,50 @@
 
 /* Anchor scroll behavior */
 $('.slider-nav__item').click(function() {
-		let dataAttrVal = $(this).data('scroll-div');
-		let $section = $(`#${dataAttrVal}`);
-		$('html, body').animate({
-			scrollTop: $section.offset().top
-		}, 500);
-	});
+	let dataAttrVal = $(this).data('scroll-div');
+	let $section = $(`#${dataAttrVal}`);
+	$('html, body').animate({
+		scrollTop: $section.offset().top
+	}, 500);
+});
 
 /* Check whether element has entered viewport */
-	$.fn.isInViewport = function () {
-		let elementTop = $(this).offset().top + ($(window).height() / 2);
-		let elementBottom = elementTop + $(this).outerHeight();
-		let viewportTop = $(window).scrollTop();
-		let viewportBottom = viewportTop + $(window).height();
-		return elementBottom > viewportTop && elementTop < viewportBottom;
-	};
+$.fn.isInViewport = function () {
+	let elementTop = $(this).offset().top + ($(window).height() / 2);
+	let elementBottom = elementTop + $(this).outerHeight();
+	let viewportTop = $(window).scrollTop();
+	let viewportBottom = viewportTop + $(window).height();
+	return elementBottom > viewportTop && elementTop < viewportBottom;
+};
 
 /* Set navigation item to active when element is in viewport */
-	const setActiveNavItem = function () {
+const setActiveNavItem = function () {
 
-		const $navItems = $('.slider-nav__item');
+	const $navItems = $('.slider-nav__item');
 
-		$navItems.each(function (index, element) {
-			let $currentItem = $(element);
-			let $refDiv = $(`#${$currentItem.data('scroll-div')}`);
-			if ($refDiv.isInViewport()) {
-				$navItems.removeClass('active');
-				$currentItem.addClass('active');
-			}
-		})
+	$navItems.each(function (index, element) {
+		let $currentItem = $(element);
+		let $refDiv = $(`#${$currentItem.data('scroll-div')}`);
+		if ($refDiv.isInViewport()) {
+			$navItems.removeClass('active');
+			$currentItem.addClass('active');
+		}
+	})
+}
+
+var stickySidebar = $('#paradigm').offset().top;
+
+/* On scroll, display and set nav to "sticky" when needed and hide nav when no longer needed*/
+$(window).scroll(function () {
+	setActiveNavItem();
+	let footer = $('#part-end').offset().top;
+	let pageHeader = $('#page-header').offset().top;
+
+	if (($(window).scrollTop() > stickySidebar) && ($(window).scrollTop() < footer)) {
+		$('.slider-nav').addClass('fix-nav');
+	}
+	else {
+		$('.slider-nav').removeClass('fix-nav');
 	}
 
-	var stickySidebar = $('.container').offset().top;
-
-	/* On scroll, display and set nav to "sticky" when needed and hide nav when no longer needed*/
-	$(window).scroll(function () {
-		setActiveNavItem();
-		let footer = $('#part-end').offset().top;
-
-		if (($(window).scrollTop() > stickySidebar) && ($(window).scrollTop() < footer) ) {
-			$('.slider-nav').addClass('fix-nav');
-		}
-		else {
-			$('.slider-nav').removeClass('fix-nav');
-		}
-
-	});
+});
