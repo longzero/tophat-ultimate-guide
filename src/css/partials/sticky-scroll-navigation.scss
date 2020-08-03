@@ -1,5 +1,5 @@
 .slider-nav { /* Default position is absolute */
-	display: none;
+	// display: none;
 	position: absolute;
 	padding: 0;
 	top: 25px;
@@ -27,6 +27,14 @@
 			color: $color-1;
 			font-size: rem(14);
 			font-weight: bold;
+		}
+	}
+
+	.typography & {
+		padding-left: 0;
+
+		&:before {
+			display: none;
 		}
 	}
 }

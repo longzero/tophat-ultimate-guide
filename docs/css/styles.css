@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 02 2020 21:44:26 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 02 2020 21:48:41 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -256,7 +256,8 @@ p, ul, ol {
   margin-bottom: 50px; }
   @media (min-width: 768px) {
     .page-section {
-      margin-bottom: 150px; } }
+      margin-bottom: 150px;
+      position: relative; } }
 
 @media (min-width: 768px) {
   .page-section-column--content,
@@ -474,7 +475,6 @@ p, ul, ol {
 
 .slider-nav {
   /* Default position is absolute */
-  display: none;
   position: absolute;
   padding: 0;
   top: 25px;
@@ -497,6 +497,10 @@ p, ul, ol {
     color: #934AF4;
     font-size: 0.77778rem;
     font-weight: bold; }
+  .typography .slider-nav__item {
+    padding-left: 0; }
+    .typography .slider-nav__item:before {
+      display: none; }
 
 .slider-links {
   color: #333;

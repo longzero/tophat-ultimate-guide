@@ -47,6 +47,7 @@ $(window).scroll(function () {
 	}
 	else {
 		$('.slider-nav').removeClass('fix-nav');
+		$('.slider-nav__item').removeClass('active');
 	}
 
 });
