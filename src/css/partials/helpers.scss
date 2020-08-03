@@ -8,6 +8,10 @@
 	justify-content: center;
 }
 
+.h-color-1 {
+	color: $color-1;
+}
+
 .h-font-size-26 {
 	font-size: rem(strip-unit($font-size-26));
 }
@@ -22,6 +26,18 @@
 
 .h-margin-0 {
 	margin: 0;
+}
+
+.h-margin-top-30 {
+	margin-top: 30px;
+}
+
+.h-margin-bottom-30 {
+	margin-bottom: 30px;
+}
+
+.h-margin-bottom-100 {
+	margin-bottom: 100px;
 }
 
 .h-overflow-hidden {

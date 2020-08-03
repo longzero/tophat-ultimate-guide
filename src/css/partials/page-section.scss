@@ -33,21 +33,48 @@
 
 .page-section-grid-image {
 	position: absolute;
-	top: 60px;
-	right: calc(#{$site-width} / 12 * -1);
+	top: -10px;
+	left: -20px;
+	right: -20px;
+	z-index: -1;
+	max-width: calc(100% + 2 * 20px);
+
+	@media (min-width: $breakpoint-ipad) {
+		position: absolute;
+		top: 60px;
+		left: auto;
+		right: calc(#{$site-width} / 12 * -1);
+		max-width: none;
+	}
 
 	.page-section-section--reverse & {
-		top: 0;
-		left: calc(#{$site-width} / 12 * -1);
-		right: auto;
+		top: -10px;
+		left: -20px;
+		right: -20px;
+		max-width: calc(100% + 2 * 20px);
+
+		@media (min-width: $breakpoint-ipad) {
+			top: 0;
+			left: calc(#{$site-width} / 12 * -1);
+			right: auto;
+			max-width: none;
+		}
 	}
 }
 
 .page-section-grid-image--2 {
 	.page-section-section--reverse & {
-		top: 60px;
-		left: auto;
-		right: calc(#{$site-width} / 6 * -1);
+		top: -10px;
+		left: -20px;
+		right: -20px;
+		max-width: calc(100% + 2 * 20px);
+
+		@media (min-width: $breakpoint-ipad) {
+			top: 60px;
+			left: auto;
+			right: calc(#{$site-width} / 6 * -1);
+			max-width: none;
+		}
 	}
 }
 

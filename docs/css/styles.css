@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 02 2020 21:54:35 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 02 2020 22:34:14 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -70,6 +70,104 @@ p, ul, ol {
   padding: 0 20px;
   max-width: 1180px;
   width: 100%; }
+
+.animation {
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out; }
+
+.fade-in {
+  opacity: 0; }
+  .fade-in.animate {
+    opacity: 1; }
+
+.fade-in-3 {
+  opacity: 0.3; }
+  .fade-in-3.animate {
+    opacity: 1; }
+
+.fade-in-5 {
+  opacity: 0.5; }
+  .fade-in-5.animate {
+    opacity: 1; }
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(50px); }
+  .fade-in-left.animate {
+    opacity: 1;
+    transform: translateY(0); }
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(50px); }
+  .fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0); }
+
+.move-up {
+  transform: translateY(50px); }
+  .move-up.animate {
+    transform: translateY(0); }
+
+.burger {
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  transition-duration: .3s;
+  width: 40px;
+  height: 40px; }
+  .burger .burger__B,
+  .burger .burger__L,
+  .burger .burger__T {
+    background-color: #000;
+    position: absolute;
+    left: 10px;
+    transition-duration: .3s;
+    width: 20px;
+    height: 2px; }
+  .burger .burger__B {
+    top: 13px; }
+  .burger .burger__L {
+    top: 50%;
+    transform: translateY(-50%); }
+  .burger .burger__T {
+    bottom: 13px; }
+  .navigation-open .burger .burger__B {
+    transform: translateY(6px) rotate(45deg); }
+  .navigation-open .burger .burger__L {
+    transform: translateY(-50%) scale(5, 0); }
+  .navigation-open .burger .burger__T {
+    transform: translateY(-6px) rotate(-45deg); }
+  .burger:hover {
+    transform: scale(1.2); }
+
+.navigation {
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: translateY(-100%);
+  transition-duration: .3s;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto; }
+  .navigation-open .navigation {
+    opacity: 1;
+    transform: translateY(0); }
+
+.navigation__link {
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none; }
 
 .callout-box {
   background-color: #fff;
@@ -279,17 +377,41 @@ p, ul, ol {
 
 .page-section-grid-image {
   position: absolute;
-  top: 60px;
-  right: calc(1180px / 12 * -1); }
+  top: -10px;
+  left: -20px;
+  right: -20px;
+  z-index: -1;
+  max-width: calc(100% + 2 * 20px); }
+  @media (min-width: 768px) {
+    .page-section-grid-image {
+      position: absolute;
+      top: 60px;
+      left: auto;
+      right: calc(1180px / 12 * -1);
+      max-width: none; } }
   .page-section-section--reverse .page-section-grid-image {
-    top: 0;
-    left: calc(1180px / 12 * -1);
-    right: auto; }
+    top: -10px;
+    left: -20px;
+    right: -20px;
+    max-width: calc(100% + 2 * 20px); }
+    @media (min-width: 768px) {
+      .page-section-section--reverse .page-section-grid-image {
+        top: 0;
+        left: calc(1180px / 12 * -1);
+        right: auto;
+        max-width: none; } }
 
 .page-section-section--reverse .page-section-grid-image--2 {
-  top: 60px;
-  left: auto;
-  right: calc(1180px / 6 * -1); }
+  top: -10px;
+  left: -20px;
+  right: -20px;
+  max-width: calc(100% + 2 * 20px); }
+  @media (min-width: 768px) {
+    .page-section-section--reverse .page-section-grid-image--2 {
+      top: 60px;
+      left: auto;
+      right: calc(1180px / 6 * -1);
+      max-width: none; } }
 
 @media (min-width: 768px) {
   .page-section-image {
@@ -538,6 +660,9 @@ p, ul, ol {
   align-items: center;
   justify-content: center; }
 
+.h-color-1 {
+  color: #934AF4; }
+
 .h-font-size-26 {
   font-size: 1.44444rem; }
 
@@ -549,6 +674,15 @@ p, ul, ol {
 
 .h-margin-0 {
   margin: 0; }
+
+.h-margin-top-30 {
+  margin-top: 30px; }
+
+.h-margin-bottom-30 {
+  margin-bottom: 30px; }
+
+.h-margin-bottom-100 {
+  margin-bottom: 100px; }
 
 .h-overflow-hidden {
   overflow: hidden; }
