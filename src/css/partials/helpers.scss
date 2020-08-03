@@ -1,3 +1,7 @@
+.h-bold {
+	font-weight: bold;
+}
+
 .h-section-background {
 	background-color: $color-section-background;
 }
@@ -16,8 +20,24 @@
 	font-size: rem(strip-unit($font-size-26)) !important;
 }
 
+.h-font-size-26--desktop {
+	@media (min-width: $breakpoint-desktop) {
+		font-size: rem(strip-unit($font-size-32)) !important;
+	}
+}
+
 .h-font-size-32 {
 	font-size: rem(strip-unit($font-size-32)) !important;
+	@media (min-width: $breakpoint-desktop) {
+		font-size: rem(strip-unit($font-size-42)) !important;
+	}
+}
+
+.h-font-size-32--stick {
+	font-size: rem(strip-unit($font-size-32)) !important;
+	@media (min-width: $breakpoint-desktop) {
+		font-size: rem(strip-unit($font-size-32)) !important;
+	}
 }
 
 .h-font-size-39 {
@@ -28,12 +48,27 @@
 	font-size: rem(strip-unit($font-size-42)) !important;
 }
 
+.h-font-size-42--desktop {
+	@media (min-width: $breakpoint-desktop) {
+		font-size: rem(strip-unit($font-size-42)) !important;
+	}
+}
+
+.h-font-size-55--desktop {
+	@media (min-width: $breakpoint-desktop) {
+		font-size: rem(strip-unit($font-size-55)) !important;
+	}
+}
+
 .h-margin-0 {
 	margin: 0;
 }
 
 .h-margin-top-30 {
 	margin-top: 30px;
+	@media (min-width: $breakpoint-desktop) {
+		margin-top: 60px;
+	}
 }
 
 .h-margin-top-40 {

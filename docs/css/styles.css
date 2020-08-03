@@ -1,4 +1,4 @@
-/* Generated on: Mon Aug 03 2020 00:37:27 GMT-0400 (GMT-04:00) */
+/* Generated on: Mon Aug 03 2020 00:52:29 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -589,6 +589,11 @@ p, ul, ol {
 .typography h2, .typography h3 {
   font-size: 1.77778rem; }
 
+@media (min-width: 991px) {
+  .typography h2 {
+    font-size: 2.33333rem;
+    font-weight: bold; } }
+
 .typography h4 {
   font-size: 1.44444rem; }
 
@@ -665,6 +670,9 @@ p, ul, ol {
   /* Hide when no longer needed (reach footer) */
   display: none; }
 
+.h-bold {
+  font-weight: bold; }
+
 .h-section-background {
   background-color: #EEE6FC; }
 
@@ -679,8 +687,21 @@ p, ul, ol {
 .h-font-size-26 {
   font-size: 1.44444rem !important; }
 
+@media (min-width: 991px) {
+  .h-font-size-26--desktop {
+    font-size: 1.77778rem !important; } }
+
 .h-font-size-32 {
   font-size: 1.77778rem !important; }
+  @media (min-width: 991px) {
+    .h-font-size-32 {
+      font-size: 2.33333rem !important; } }
+
+.h-font-size-32--stick {
+  font-size: 1.77778rem !important; }
+  @media (min-width: 991px) {
+    .h-font-size-32--stick {
+      font-size: 1.77778rem !important; } }
 
 .h-font-size-39, .page-section-title {
   font-size: 2.16667rem !important; }
@@ -688,11 +709,18 @@ p, ul, ol {
 .h-font-size-42 {
   font-size: 2.33333rem !important; }
 
+@media (min-width: 991px) {
+  .h-font-size-42--desktop {
+    font-size: 2.33333rem !important; } }
+
 .h-margin-0 {
   margin: 0; }
 
 .h-margin-top-30 {
   margin-top: 30px; }
+  @media (min-width: 991px) {
+    .h-margin-top-30 {
+      margin-top: 60px; } }
 
 .h-margin-top-40 {
   margin-top: 40px; }

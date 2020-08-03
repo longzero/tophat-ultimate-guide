@@ -12,6 +12,13 @@
 		font-size: rem(32);
 	}
 
+	h2 {
+		@media (min-width: $breakpoint-desktop) {
+			font-size: rem(42);
+			font-weight: bold;
+		}
+	}
+
 	h4 {
 		font-size: rem(26);
 	}
