@@ -8,6 +8,14 @@
 }
 
 .typography {
+	h2,h3 {
+		font-size: rem(32);
+	}
+
+	h4 {
+		font-size: rem(26);
+	}
+
 	ol, ul {
 		list-style: none;
 	}
@@ -20,6 +28,12 @@
 			position: absolute;
 			top: 0;
 			left: 2px;
+		}
+	}
+
+	p {
+		+ h2 {
+			margin-top: 30px;
 		}
 	}
 }

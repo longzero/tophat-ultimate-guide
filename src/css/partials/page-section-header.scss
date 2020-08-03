@@ -99,7 +99,7 @@
 }
 
 .page-section-title {
-	@extend .h-font-size-42;
+	@extend .h-font-size-39;
 	background-color: #000;
 	color: #fff;
 	margin: 0 auto;
@@ -115,7 +115,7 @@
 	}
 
 	h1 {
-		font-size: rem(42);
+		font-size: rem(39);
 		margin-bottom: 0;
 
 		@media (min-width: $breakpoint-desktop) {

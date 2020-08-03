@@ -13,15 +13,19 @@
 }
 
 .h-font-size-26 {
-	font-size: rem(strip-unit($font-size-26));
+	font-size: rem(strip-unit($font-size-26)) !important;
 }
 
 .h-font-size-32 {
-	font-size: rem(strip-unit($font-size-32));
+	font-size: rem(strip-unit($font-size-32)) !important;
+}
+
+.h-font-size-39 {
+	font-size: rem(strip-unit($font-size-39)) !important;
 }
 
 .h-font-size-42 {
-	font-size: rem(strip-unit($font-size-42));
+	font-size: rem(strip-unit($font-size-42)) !important;
 }
 
 .h-margin-0 {
@@ -32,8 +36,16 @@
 	margin-top: 30px;
 }
 
+.h-margin-top-40 {
+	margin-top: 40px;
+}
+
 .h-margin-bottom-30 {
 	margin-bottom: 30px;
+}
+
+.h-margin-bottom-40 {
+	margin-bottom: 40px;
 }
 
 .h-margin-bottom-100 {

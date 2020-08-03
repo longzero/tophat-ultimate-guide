@@ -4,8 +4,14 @@
 	display: flex;
 	align-items: center;
 	line-height: 1.5;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .media-content-box-image {
@@ -16,4 +22,9 @@
 	flex: 0 0 80px;
 	margin-right: 15px;
 	width: 80px;
+}
+
+.media-content-box--key {
+	border: 0;
+	padding: 0;
 }
