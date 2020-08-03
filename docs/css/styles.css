@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 02 2020 22:34:14 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 02 2020 23:45:59 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -46,8 +46,6 @@ iframe, img, video {
 p, ul, ol {
   line-height: 1.5;
   margin-bottom: 1rem; }
-  p:last-child, ul:last-child, ol:last-child {
-    margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .columns {
@@ -240,8 +238,6 @@ p, ul, ol {
     .color-box {
       margin-bottom: 60px;
       padding: 40px; } }
-  .color-box:last-child {
-    margin-bottom: 0; }
   .color-box p:last-child {
     margin-bottom: 0; }
 
@@ -457,10 +453,6 @@ p, ul, ol {
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px; } }
-
-.page-section-section:last-child,
-.page-section-section .container:last-child {
-  margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .page-section-section--short-grid .page-section-column--media {
