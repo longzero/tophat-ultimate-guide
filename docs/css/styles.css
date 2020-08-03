@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 02 2020 21:48:41 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 02 2020 21:54:35 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -475,12 +475,15 @@ p, ul, ol {
 
 .slider-nav {
   /* Default position is absolute */
-  position: absolute;
-  padding: 0;
-  top: 25px;
-  left: 0;
-  z-index: 100;
-  width: 250px; }
+  display: none; }
+  @media (min-width: 991px) {
+    .slider-nav {
+      position: absolute;
+      padding: 0;
+      top: 25px;
+      left: 0;
+      z-index: 100;
+      width: 250px; } }
 
 .slider-nav__item {
   display: flex;

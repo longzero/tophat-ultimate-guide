@@ -5,9 +5,10 @@
 $('.slider-nav__item').click(function() {
 	let dataAttrVal = $(this).data('scroll-div');
 	let $section = $(`#${dataAttrVal}`);
-	$('html, body').animate({
-		scrollTop: $section.offset().top
-	}, 500);
+	// jQuery slim version is used, so this does not work.
+	// $('html, body').animate({
+	// 	scrollTop: $section.offset().top
+	// }, 500);
 });
 
 /* Check whether element has entered viewport */
@@ -38,16 +39,19 @@ var stickySidebar = $('#paradigm').offset().top;
 
 /* On scroll, display and set nav to "sticky" when needed and hide nav when no longer needed*/
 $(window).scroll(function () {
-	setActiveNavItem();
-	let footer = $('#part-end').offset().top;
-	let pageHeader = $('#page-header').offset().top;
+	if ($(window).width() >= 991) {
+		setActiveNavItem();
+		let footer = $('#part-end').offset().top;
+		let pageHeader = $('#page-header').offset().top;
 
-	if (($(window).scrollTop() > stickySidebar) && ($(window).scrollTop() < footer)) {
-		$('.slider-nav').addClass('fix-nav');
+		if (($(window).scrollTop() > stickySidebar) && ($(window).scrollTop() < footer)) {
+			$('.slider-nav').addClass('fix-nav');
+		}
+		else {
+			$('.slider-nav').removeClass('fix-nav');
+			$('.slider-nav__item').removeClass('active');
+		}
 	}
-	else {
-		$('.slider-nav').removeClass('fix-nav');
-		$('.slider-nav__item').removeClass('active');
-	}
-
 });
+
+console.log("sticky-scroll-navigation.js loaded")

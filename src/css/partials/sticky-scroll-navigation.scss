@@ -1,11 +1,13 @@
 .slider-nav { /* Default position is absolute */
-	// display: none;
-	position: absolute;
-	padding: 0;
-	top: 25px;
-	left: 0;
-	z-index: $layer-sticky-scroll-navigation;
-	width: 250px;
+	display: none;
+	@media (min-width: $breakpoint-desktop) {
+		position: absolute;
+		padding: 0;
+		top: 25px;
+		left: 0;
+		z-index: $layer-sticky-scroll-navigation;
+		width: 250px;
+	}
 }
 
 .slider-nav__item {
