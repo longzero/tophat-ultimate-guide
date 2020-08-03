@@ -58,10 +58,12 @@
 }
 
 .fix-nav{ /* Active position is fixed */
-	display: block;
-	position: fixed;
-	top: 25px;
-	right:0;
+	@media (min-width: $breakpoint-desktop) {
+		display: block;
+		position: fixed;
+		top: 25px;
+		right:0;
+	}
 }
 
 .hidden { /* Hide when no longer needed (reach footer) */

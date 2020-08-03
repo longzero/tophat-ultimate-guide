@@ -1,4 +1,4 @@
-/* Generated on: Mon Aug 03 2020 00:52:29 GMT-0400 (GMT-04:00) */
+/* Generated on: Mon Aug 03 2020 01:21:16 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -660,11 +660,13 @@ p, ul, ol {
   height: 2px; }
 
 .fix-nav {
-  /* Active position is fixed */
-  display: block;
-  position: fixed;
-  top: 25px;
-  right: 0; }
+  /* Active position is fixed */ }
+  @media (min-width: 991px) {
+    .fix-nav {
+      display: block;
+      position: fixed;
+      top: 25px;
+      right: 0; } }
 
 .hidden {
   /* Hide when no longer needed (reach footer) */
@@ -712,6 +714,10 @@ p, ul, ol {
 @media (min-width: 991px) {
   .h-font-size-42--desktop {
     font-size: 2.33333rem !important; } }
+
+@media (min-width: 991px) {
+  .h-font-size-55--desktop {
+    font-size: 3.05556rem !important; } }
 
 .h-margin-0 {
   margin: 0; }
