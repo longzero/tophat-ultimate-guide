@@ -26,7 +26,6 @@ gulp.task('watch', gulp.series('styles', (done) => {
 }));
 
 
-
 // TASKS
 // Bundled tasks
 gulp.task('default', gulp.parallel('styles'));
