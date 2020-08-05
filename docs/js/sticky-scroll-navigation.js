@@ -38,7 +38,14 @@ const setActiveNavItem = function () {
 var stickySidebar = $('#paradigm').offset().top;
 
 /* On scroll, display and set nav to "sticky" when needed and hide nav when no longer needed*/
+let isScrolling;
 $(window).scroll(function () {
+	$('body').addClass('scrolling'); // Indicate that user is scrolling.
+	window.clearTimeout(isScrolling); // Prevent body class (scrolling) from being removed as long as user scrolls.
+	isScrolling = setTimeout(function(){
+		$('body').removeClass('scrolling'); // When user stops scrolling, remove the body class.
+	}, 400);
+
 	if ($(window).width() >= 991) {
 		setActiveNavItem();
 		let footer = $('#part-end').offset().top;
