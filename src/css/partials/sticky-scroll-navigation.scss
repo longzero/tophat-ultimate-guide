@@ -1,6 +1,6 @@
 .slider-nav { /* Default position is absolute */
 	display: none;
-	@media (min-width: $breakpoint-desktop) {
+	@media (min-width: $breakpoint-navigation) {
 		position: absolute;
 		padding: 0;
 		top: 25px;
@@ -58,7 +58,7 @@
 }
 
 .fix-nav{ /* Active position is fixed */
-	@media (min-width: $breakpoint-desktop) {
+	@media (min-width: $breakpoint-navigation) {
 		display: block;
 		position: fixed;
 		top: 25px;

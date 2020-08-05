@@ -80,6 +80,8 @@
 
 .page-section-image {
 	@media (min-width: $breakpoint-ipad) {
+		margin-top: -50px; // To add a padding without changing the “position” of the image
+		padding-top: 50px;
 		position: sticky;
 		top: 0;
 
