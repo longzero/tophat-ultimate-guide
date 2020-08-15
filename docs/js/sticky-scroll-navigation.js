@@ -35,7 +35,7 @@ const setActiveNavItem = function () {
 	})
 }
 
-var stickySidebar = $('#paradigm').offset().top;
+var stickySidebar = $('#section-1').offset().top;
 
 /* On scroll, display and set nav to "sticky" when needed and hide nav when no longer needed*/
 let isScrolling;
