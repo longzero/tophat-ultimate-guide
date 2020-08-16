@@ -1,4 +1,4 @@
-/* Generated on: Sat Aug 15 2020 10:58:24 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 16 2020 08:35:13 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -15,8 +15,7 @@ body {
   font-family: "Source Sans Pro";
   font-weight: 400;
   line-height: 1;
-  width: 100%;
-  overflow-x: hidden; }
+  width: 100%; }
 
 a {
   color: #E5166B;
@@ -228,6 +227,12 @@ p, ul, ol {
     top: 15px;
     lefT: 15px; }
 
+.callout-box--transparent {
+  border-color: #D9D9D9; }
+  .callout-box--transparent:after {
+    background-color: transparent;
+    border: 1px solid #D9D9D9; }
+
 .color-box {
   background-color: #934AF4;
   color: #fff;
@@ -360,6 +365,27 @@ p, ul, ol {
     .page-section {
       margin-bottom: 150px;
       position: relative; } }
+
+.page-section--background-callout {
+  padding: 50px 20px; }
+  @media (min-width: 991px) {
+    .page-section--background-callout {
+      padding: 100px; } }
+  @media (min-width: 1200px) {
+    .page-section--background-callout {
+      padding: 145px 220px; } }
+  .page-section--background-callout .callout-box {
+    border: 5px solid #2D1258;
+    margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .page-section--background-callout .callout-box {
+        font-size: 1.77778rem;
+        font-weight: 600;
+        padding: 70px; } }
+    .page-section--background-callout .callout-box:after {
+      background-color: #2D1258; }
+    .page-section--background-callout .callout-box p:last-child {
+      margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .page-section-column--content,

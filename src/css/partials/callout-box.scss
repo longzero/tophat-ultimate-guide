@@ -77,3 +77,11 @@ $callout-offset: 20px;
 		lefT: 15px;
 	}
 }
+
+.callout-box--transparent {
+	border-color: $color-4;
+	&:after {
+		background-color: transparent;
+		border: 1px solid $color-4;
+	}
+}

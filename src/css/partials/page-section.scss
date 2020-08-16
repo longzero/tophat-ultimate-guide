@@ -7,6 +7,37 @@
 	}
 }
 
+.page-section--background-callout {
+	padding: 50px 20px;
+	@media (min-width: $breakpoint-desktop) {
+		padding: 100px;
+	}
+	@media (min-width: $breakpoint-large) {
+		padding: 145px 220px;
+	}
+
+	.callout-box {
+		border: 5px solid $color-7;
+		margin-bottom: 0;
+
+		@media (min-width: $breakpoint-ipad) {
+			font-size: rem(32);
+			font-weight: 600;
+			padding: 70px;
+		}
+
+		&:after {
+			background-color: $color-7;
+		}
+
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
 .page-section-column--content,
 .page-section-column--media {
 	@media (min-width: $breakpoint-ipad) {
@@ -173,10 +204,6 @@ svg.page-section-image {
 		justify-content: space-between;
 		margin-bottom: 150px;
 	}
-
-	// &:last-child {
-	// 	margin-bottom: 0;
-	// }
 }
 
 .page-section-section--short-grid {
@@ -191,9 +218,5 @@ svg.page-section-image {
 .page-section-section--reverse .container {
 	@media (min-width: $breakpoint-ipad) {
 		flex-direction: row-reverse;
-
-		// .page-section-column--content {
-		// 	margin-left: calc(100% / 12);
-		// }
 	}
 }
