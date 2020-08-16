@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 16 2020 16:38:15 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 16 2020 17:18:24 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -900,6 +900,9 @@ p, ul, ol {
   font-size: 1.44444rem;
   margin-bottom: 48px;
   max-width: 780px; }
+
+.faculty-preparedness .slider-nav {
+  display: block; }
 
 .faculty-preparedness .statistic-item {
   padding: 0; }
