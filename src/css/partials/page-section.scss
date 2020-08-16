@@ -19,6 +19,8 @@
 	.callout-box {
 		border: 5px solid $color-7;
 		margin-bottom: 0;
+		margin: 0 auto;
+		max-width: 980px;
 
 		@media (min-width: $breakpoint-ipad) {
 			font-size: rem(32);
