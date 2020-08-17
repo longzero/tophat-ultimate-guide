@@ -8,8 +8,10 @@
 }
 
 .page-section--background-callout {
+	margin-top: 50px;
 	padding: 50px 20px;
 	@media (min-width: $breakpoint-desktop) {
+		margin-top: 0;
 		padding: 100px;
 	}
 	@media (min-width: $breakpoint-large) {

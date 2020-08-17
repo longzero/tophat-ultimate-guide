@@ -84,4 +84,9 @@ $callout-offset: 20px;
 		background-color: transparent;
 		border: 1px solid $color-4;
 	}
+	p {
+		&:first-child:not(:last-child) {
+			font-size: rem(18);
+		}
+	}
 }

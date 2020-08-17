@@ -87,6 +87,17 @@
 	margin-bottom: 100px;
 }
 
+.h-margin-left-spacing {
+	@media (min-width: $breakpoint-ipad) {
+		margin-left: calc(100% / 12);
+	}
+}
+.h-margin-right-spacing {
+	@media (min-width: $breakpoint-ipad) {
+		margin-right: calc(100% / 12);
+	}
+}
+
 .h-overflow-hidden {
 	overflow: hidden;
 }
