@@ -1,4 +1,4 @@
-/* Generated on: Sun Aug 16 2020 21:20:34 GMT-0400 (GMT-04:00) */
+/* Generated on: Sun Aug 16 2020 22:32:49 GMT-0400 (GMT-04:00) */
 @charset "UTF-8";
 * {
   box-sizing: border-box;
@@ -296,34 +296,34 @@ p, ul, ol {
   border: 0;
   padding: 0; }
 
-.page-header {
+.long-page-header {
   background-color: #AAEDD1;
   margin-bottom: 80px; }
   @media (min-width: 768px) {
-    .page-header {
+    .long-page-header {
       display: flex;
       position: relative;
       height: 928px;
       overflow: hidden; }
-      .page-header .container,
-      .page-header .page-header-media {
+      .long-page-header .container,
+      .long-page-header .long-page-header-media {
         flex: 0 0 50%;
         width: 50%; }
-      .page-header .container {
+      .long-page-header .container {
         display: flex;
         align-items: center; }
-      .page-header .page-header-media {
+      .long-page-header .long-page-header-media {
         background-position: center right;
         background-repeat: no-repeat;
         background-size: cover;
         margin-right: 0; }
-        .page-header .page-header-media img {
+        .long-page-header .long-page-header-media img {
           visibility: hidden; } }
   @media (min-width: 991px) {
-    .page-header {
+    .long-page-header {
       margin-bottom: 150px; } }
 
-.page-header-content {
+.long-page-header-content {
   background-color: #000;
   color: #fff;
   margin: -160px auto 0;
@@ -331,7 +331,7 @@ p, ul, ol {
   position: relative;
   transform: translateY(30px); }
   @media (min-width: 768px) {
-    .page-header-content {
+    .long-page-header-content {
       margin: 0 0 0 calc(100vw / 12 * -5);
       padding: 100px 100px 120px 106px;
       transform: none;
@@ -339,31 +339,31 @@ p, ul, ol {
       min-height: 543px;
       width: 90vw; } }
   @media (min-width: 991px) {
-    .page-header-content {
+    .long-page-header-content {
       margin-left: calc(100% / 12 * -4); } }
   @media (min-width: 1220px) {
-    .page-header-content {
+    .long-page-header-content {
       margin-left: calc(100% / 12 * -1.5);
       width: 100%; } }
-  .page-header-content h1 {
+  .long-page-header-content h1 {
     font-size: 2.33333rem;
     line-height: 1.1; }
     @media (min-width: 768px) {
-      .page-header-content h1 {
+      .long-page-header-content h1 {
         font-size: 3.5rem;
         line-height: 1.2; } }
-  .page-header-content p {
+  .long-page-header-content p {
     font-size: 1.33333rem;
     line-height: 1.5;
     margin-top: 20px; }
     @media (min-width: 768px) {
-      .page-header-content p {
+      .long-page-header-content p {
         margin-top: 30px; } }
 
-.page-header-media {
+.long-page-header-media {
   margin-right: 20px; }
   @media (min-width: 768px) {
-    .page-header-media {
+    .long-page-header-media {
       text-align: right;
       width: 50%; } }
 
@@ -874,19 +874,19 @@ p, ul, ol {
       .faculty-preparedness .page-section-header .container {
         padding: 0;
         min-height: 604px; } }
-  .faculty-preparedness .page-section-header .page-header-background {
+  .faculty-preparedness .page-section-header .long-page-header-background {
     left: 0; }
     @media (min-width: 1200px) {
-      .faculty-preparedness .page-section-header .page-header-background {
+      .faculty-preparedness .page-section-header .long-page-header-background {
         top: 50%;
         transform: translateY(-50%);
         min-height: 805px; } }
-    .faculty-preparedness .page-section-header .page-header-background svg {
+    .faculty-preparedness .page-section-header .long-page-header-background svg {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-50%); }
-  .faculty-preparedness .page-section-header .page-header-background__solid {
+  .faculty-preparedness .page-section-header .long-page-header-background__solid {
     background-color: #E5166B;
     top: 30px;
     bottom: 30px;
@@ -895,7 +895,7 @@ p, ul, ol {
     height: auto;
     max-width: 577px;
     width: 100%; }
-  .faculty-preparedness .page-section-header .page-header-content {
+  .faculty-preparedness .page-section-header .long-page-header-content {
     background-color: #fff;
     border: 1px solid #D9D9D9;
     color: #000;
@@ -903,21 +903,21 @@ p, ul, ol {
     padding: 20px;
     max-width: 580px; }
     @media (min-width: 1200px) {
-      .faculty-preparedness .page-section-header .page-header-content {
+      .faculty-preparedness .page-section-header .long-page-header-content {
         margin-left: 40px;
         padding-top: 79px;
         padding-bottom: 50px; } }
-    .faculty-preparedness .page-section-header .page-header-content p {
+    .faculty-preparedness .page-section-header .long-page-header-content p {
       font-size: 1rem;
       margin: 0; }
-  .faculty-preparedness .page-section-header .page-header-media {
+  .faculty-preparedness .page-section-header .long-page-header-media {
     margin: 0 0 50px; }
     @media (min-width: 991px) {
-      .faculty-preparedness .page-section-header .page-header-media {
+      .faculty-preparedness .page-section-header .long-page-header-media {
         background-position: center;
         margin: 0 auto; } }
     @media (min-width: 1200px) {
-      .faculty-preparedness .page-section-header .page-header-media {
+      .faculty-preparedness .page-section-header .long-page-header-media {
         margin-bottom: 0; } }
 
 .faculty-preparedness .page-section-section {
@@ -1008,41 +1008,41 @@ p, ul, ol {
   line-height: 1;
   margin-bottom: 10px; }
 
-.page-header--faculty {
+.long-page-header--faculty {
   background-color: transparent;
   padding: 0;
   position: relative; }
   @media (min-width: 768px) {
-    .page-header--faculty {
+    .long-page-header--faculty {
       height: auto; } }
   @media (min-width: 1200px) {
-    .page-header--faculty {
+    .long-page-header--faculty {
       padding: 100px;
       position: relative;
       min-height: 805px; } }
-  .page-header--faculty h1 {
+  .long-page-header--faculty h1 {
     border-top: 4px solid #fff;
     border-bottom: 4px solid #fff;
     margin: 20px 0 30px;
     padding: 30px 0; }
     @media (min-width: 991px) {
-      .page-header--faculty h1 {
+      .long-page-header--faculty h1 {
         font-size: 4.05556rem;
         font-weight: 700; } }
   @media (min-width: 991px) {
-    .page-header--faculty h3 {
+    .long-page-header--faculty h3 {
       font-size: 1.77778rem; } }
   @media (min-width: 991px) {
-    .page-header--faculty h4 {
+    .long-page-header--faculty h4 {
       font-size: 1.44444rem; } }
-  .page-header--faculty .container {
+  .long-page-header--faculty .container {
     padding: 0; }
     @media (min-width: 768px) {
-      .page-header--faculty .container {
+      .long-page-header--faculty .container {
         align-items: stretch;
         flex: 0 0 100%;
         width: 100%; } }
-  .page-header--faculty .page-header-content {
+  .long-page-header--faculty .long-page-header-content {
     background-color: #E5166B;
     display: flex;
     flex-direction: column;
@@ -1054,11 +1054,11 @@ p, ul, ol {
     transform: none;
     width: 100%; }
     @media (min-width: 991px) {
-      .page-header--faculty .page-header-content {
+      .long-page-header--faculty .long-page-header-content {
         margin: 0;
         padding: 100px 55px;
         max-width: 701px; } }
-  .page-header--faculty .page-header-media {
+  .long-page-header--faculty .long-page-header-media {
     background-position: left;
     background-repeat: no-repeat;
     border: 4px solid #2D1258;
@@ -1069,10 +1069,10 @@ p, ul, ol {
     z-index: 1;
     width: auto; }
     @media (min-width: 991px) {
-      .page-header--faculty .page-header-media {
+      .long-page-header--faculty .long-page-header-media {
         border: 0;
         margin: 0; } }
-    .page-header--faculty .page-header-media:after {
+    .long-page-header--faculty .long-page-header-media:after {
       background-color: #2D1258;
       content: '';
       display: block;
@@ -1083,25 +1083,25 @@ p, ul, ol {
       width: 100%;
       height: 100%; }
       @media (min-width: 991px) {
-        .page-header--faculty .page-header-media:after {
+        .long-page-header--faculty .long-page-header-media:after {
           display: none; } }
-    .page-header--faculty .page-header-media img {
+    .long-page-header--faculty .long-page-header-media img {
       display: block; }
       @media (min-width: 768px) {
-        .page-header--faculty .page-header-media img {
+        .long-page-header--faculty .long-page-header-media img {
           visibility: visible; } }
       @media (min-width: 991px) {
-        .page-header--faculty .page-header-media img {
+        .long-page-header--faculty .long-page-header-media img {
           display: none;
           visibility: hidden; } }
 
-.page-header-background {
+.long-page-header-background {
   position: absolute;
   top: 0;
   left: 30px;
   width: 100%; }
 
-.page-header-background__solid {
+.long-page-header-background__solid {
   background-color: #2D1258;
   display: none;
   position: absolute;
@@ -1110,5 +1110,5 @@ p, ul, ol {
   width: 35%;
   height: 100%; }
   @media (min-width: 768px) {
-    .page-header-background__solid {
+    .long-page-header-background__solid {
       display: block; } }

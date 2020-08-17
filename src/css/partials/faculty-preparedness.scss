@@ -62,7 +62,7 @@
 				min-height: 604px;
 			}
 		}
-		.page-header-background {
+		.long-page-header-background {
 			left: 0;
 			@media (min-width: $breakpoint-large) {
 				top: 50%;
@@ -76,7 +76,7 @@
 				transform: translateX(-50%);
 			}
 		}
-		.page-header-background__solid {
+		.long-page-header-background__solid {
 			background-color: $color-3;
 			top: 30px;
 			bottom: 30px;
@@ -86,7 +86,7 @@
 			max-width: 577px;
 			width: 100%;
 		}
-		.page-header-content {
+		.long-page-header-content {
 			background-color: #fff;
 			border: 1px solid $color-4;
 			color: #000;
@@ -103,7 +103,7 @@
 				margin: 0;
 			}
 		}
-		.page-header-media {
+		.long-page-header-media {
 			margin: 0 0 50px;
 			@media (min-width: $breakpoint-desktop) {
 				background-position: center;
@@ -232,7 +232,7 @@
 	}
 }
 
-.page-header--faculty {
+.long-page-header--faculty {
 	background-color: transparent;
 	padding: 0;
 	position: relative;
@@ -278,7 +278,7 @@
 			width: 100%;
 		}
 	}
-	.page-header-content {
+	.long-page-header-content {
 		background-color: $color-3;
 		display: flex;
 		flex-direction: column;
@@ -295,7 +295,7 @@
 			max-width: 701px;
 		}
 	}
-	.page-header-media {
+	.long-page-header-media {
 		background-position: left;
 		background-repeat: no-repeat;
 		border: 4px solid $color-7;
@@ -336,13 +336,13 @@
 	}
 }
 
-.page-header-background {
+.long-page-header-background {
 	position: absolute;
 	top: 0;
 	left: 30px;
 	width: 100%;
 }
-.page-header-background__solid {
+.long-page-header-background__solid {
 	background-color: $color-7;
 	display: none;
 	position: absolute;

@@ -49,7 +49,7 @@ $(window).scroll(function () {
 	if ($(window).width() >= 991) {
 		setActiveNavItem();
 		let footer = $('#part-end').offset().top;
-		let pageHeader = $('#page-header').offset().top;
+		let pageHeader = $('#long-page-header').offset().top;
 
 		if (($(window).scrollTop() > stickySidebar) && ($(window).scrollTop() < footer)) {
 			$('.slider-nav').addClass('fix-nav');
