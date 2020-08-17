@@ -6,6 +6,7 @@
 	<title>Tophat Ultimate Guide</title>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 </head>
 <body>
 
@@ -212,6 +213,7 @@
 					<div class="page-section-column page-section-column--content h-margin-left-spacing h-margin-right-spacing fade-in move-up animation js-animate">
 						<div class="chart-box">
 							<h4 class="chart-title">How would you rate the level of clarity your school has provided regarding its plans for teaching students in the fall academic term?</h4>
+							<canvas id="barChart1" width="400" height="254"></canvas>
 							<svg width="518" height="277" viewBox="0 0 518 277" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M79.972 267.803C78.808 267.803 77.902 267.287 77.254 266.255C76.606 265.223 76.282 263.741 76.282 261.809C76.282 259.877 76.606 258.407 77.254 257.399C77.902 256.391 78.808 255.887 79.972 255.887C81.124 255.887 82.024 256.391 82.672 257.399C83.32 258.407 83.644 259.877 83.644 261.809C83.644 263.741 83.32 265.223 82.672 266.255C82.024 267.287 81.124 267.803 79.972 267.803ZM79.972 266.615C80.308 266.615 80.608 266.525 80.872 266.345C81.148 266.153 81.382 265.865 81.574 265.481C81.778 265.085 81.934 264.587 82.042 263.987C82.15 263.375 82.204 262.649 82.204 261.809C82.204 260.969 82.15 260.249 82.042 259.649C81.934 259.049 81.778 258.563 81.574 258.191C81.382 257.807 81.148 257.525 80.872 257.345C80.608 257.165 80.308 257.075 79.972 257.075C79.636 257.075 79.33 257.165 79.054 257.345C78.778 257.525 78.538 257.807 78.334 258.191C78.142 258.563 77.992 259.049 77.884 259.649C77.776 260.249 77.722 260.969 77.722 261.809C77.722 263.489 77.926 264.713 78.334 265.481C78.754 266.237 79.3 266.615 79.972 266.615Z" fill="#767676"/>
 								<path d="M152.257 267.587V266.363H154.885V257.903H152.797V256.949C153.325 256.853 153.781 256.739 154.165 256.607C154.561 256.463 154.915 256.295 155.227 256.103H156.361V266.363H158.737V267.587H152.257ZM164.264 267.803C163.1 267.803 162.194 267.287 161.546 266.255C160.898 265.223 160.574 263.741 160.574 261.809C160.574 259.877 160.898 258.407 161.546 257.399C162.194 256.391 163.1 255.887 164.264 255.887C165.416 255.887 166.316 256.391 166.964 257.399C167.612 258.407 167.936 259.877 167.936 261.809C167.936 263.741 167.612 265.223 166.964 266.255C166.316 267.287 165.416 267.803 164.264 267.803ZM164.264 266.615C164.6 266.615 164.9 266.525 165.164 266.345C165.44 266.153 165.674 265.865 165.866 265.481C166.07 265.085 166.226 264.587 166.334 263.987C166.442 263.375 166.496 262.649 166.496 261.809C166.496 260.969 166.442 260.249 166.334 259.649C166.226 259.049 166.07 258.563 165.866 258.191C165.674 257.807 165.44 257.525 165.164 257.345C164.9 257.165 164.6 257.075 164.264 257.075C163.928 257.075 163.622 257.165 163.346 257.345C163.07 257.525 162.83 257.807 162.626 258.191C162.434 258.563 162.284 259.049 162.176 259.649C162.068 260.249 162.014 260.969 162.014 261.809C162.014 263.489 162.218 264.713 162.626 265.481C163.046 266.237 163.592 266.615 164.264 266.615Z" fill="#767676"/>
@@ -1526,11 +1528,382 @@
 
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 	<script type="text/javascript" src="js/animate-in.js"></script>
 	<script type="text/javascript" src="js/sticky-scroll-navigation.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/live.js"></script>
+
+	<script>
+
+  	/*--------- Charts ----------*/
+
+    Chart.defaults.global.animation.duration = 1000;
+    Chart.defaults.global.animation.easing = 'easeOutQuart';
+
+    var ctx = document.getElementById('barChart1');
+    // var ctx2 = document.getElementById('barChart2');
+    // var ctx3 = document.getElementById('barChart3');
+    // var ctx4 = document.getElementById('barChart4');
+    // var ctx5 = document.getElementById('barChart5');
+    // var ctx6 = document.getElementById('barChart6');
+    // var ctx7 = document.getElementById('barChart7');
+    // var ctx8 = document.getElementById('barChart8');
+    // var ctx9 = document.getElementById('barChart9');
+    // var ctx10 = document.getElementById('barChart10');
+    // var ctx11 = document.getElementById('barChart11');
+    // var ctx12 = document.getElementById('barChart12');
+    // var ctx13 = document.getElementById('barChart13');
+    // var ctx14 = document.getElementById('barChart14');
+    // var ctx15 = document.getElementById('barChart15');
+    // var ctx16 = document.getElementById('barChart16');
+    // var ctx17 = document.getElementById('stackedChart1');
+    // var ctx18 = document.getElementById('stackedChart2');
+
+    var barColors = [
+      "#E5E5E5",
+      "#E5166B",
+      "#333333",
+      "#767676",
+      "#D9D9D9"
+    ];
+
+    var barOptions = {
+      scales: {
+          yAxes: [{
+            gridLines : {
+                display : false
+            }
+          }],
+          xAxes: [{
+
+            barPercentage: 25,
+            categoryPercentage: 1.0,
+        }]
+      },
+      data: {
+        datasets: [{
+            barThickness: 40
+        }]
+      },
+      legend: {
+        display: false
+      }
+    }
+
+    var stackedOptions = {
+      scales: {
+        xAxes: [{
+          stacked: true,
+          gridLines: {
+            display: false,
+          }
+        }],
+        yAxes: [{
+          stacked: true,
+          gridLines: {
+            display: false,
+          },
+        }]
+      },
+      legend: {
+        display: true,
+        align: 'start',
+        position: 'bottom',
+        labels: {
+          boxWidth: 15
+        }
+      }
+    }
+
+    var myChart = new Chart(ctx, {
+      type: 'horizontalBar',
+      data: {
+        labels: [
+          ['Excellent'], ['Good'], ['Fair'], ['Poor']
+        ],
+        datasets: [{
+          data: [23.3,36.3,26.9,12.4],
+          backgroundColor: barColors
+        }]
+      },
+      options: barOptions
+    });
+
+    // var myChart2 = new Chart(ctx2, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['A lot Worse'], ['Worse'], ['About the', 'Same'], ['Better'], ['A lot Better']
+    //     ],
+    //     datasets: [{
+    //       data: [16, 51, 26, 5, 1],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart3 = new Chart(ctx3, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Calm'], ['Worried'], ['Nervous'], ['Annoyed'], ['Happy'], ['Confused'], ['Surprised'], ['Angry'], ['Anxious'],
+    //     ],
+    //     datasets: [{
+    //       data: [38, 38, 37, 30, 24, 23, 6, 8, 52],
+    //       backgroundColor: [
+    //         "#934AF4", "#934AF4", "#934AF4", "#934AF4", "#934AF4", "#934AF4", "#934AF4", "#934AF4", "#E5166B",
+    //       ],
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart4 = new Chart(ctx4, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Highly', 'Concerned'], ['Not', 'Concerned'], ['Somewhat', 'Concerned']
+    //     ],
+    //     datasets: [{
+    //       data: [9, 60, 31],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart5 = new Chart(ctx5, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Somewhat', 'Concerned'], ['Highly', 'Concerned'], ['Not', 'Concerned']
+    //     ],
+    //     datasets: [{
+    //       data: [36, 16, 48],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart6 = new Chart(ctx6, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['I do not enjoy', 'or see value'], ['I enjoy or see', 'value'], ['Does not apply'], ['Other']
+    //     ],
+    //     datasets: [{
+    //       data: [36, 41, 15, 9],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart7 = new Chart(ctx7, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['I do not enjoy', 'or see value'], ['I enjoy or see', 'value'], ['Does not apply'], ['Other']
+    //     ],
+    //     datasets: [{
+    //       data: [48, 36, 7, 8],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart8 = new Chart(ctx8, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Excellent'], ['Good'], ['Fair'], ['Poor']
+    //     ],
+    //     datasets: [{
+    //       data: [25, 45, 24, 6],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart9 = new Chart(ctx9, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Excellent'], ['Good'], ['Fair'], ['Poor']
+    //     ],
+    //     datasets: [{
+    //       data: [31, 42, 21, 6],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart10 = new Chart(ctx10, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Excellent'], ['Good'], ['Fair'], ['Poor']
+    //     ],
+    //     datasets: [{
+    //       data: [20, 44, 28, 7],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart11 = new Chart(ctx11, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Excellent'], ['Good'], ['Fair'], ['Poor']
+    //     ],
+    //     datasets: [{
+    //       data: [23, 42, 31, 4],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart12 = new Chart(ctx12, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Excellent'], ['Good'], ['Fair'], ['Poor']
+    //     ],
+    //     datasets: [{
+    //       data: [25, 43, 28, 4],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart13 = new Chart(ctx13, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Excellent'], ['Good'], ['Fair'], ['Poor']
+    //     ],
+    //     datasets: [{
+    //       data: [26, 40, 27, 6],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart14 = new Chart(ctx14, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Other'], ['Significantly', 'Worse'], ['Slightly Worse'], ['Same as Before'], ['Slightly Better'], ['Significantly', 'Better']
+    //     ],
+    //     datasets: [{
+    //       data: [2, 4, 21, 51, 16, 6],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart15 = new Chart(ctx15, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Blended learning', 'comprising of in', 'class and online', 'instruction'],
+    //       ['100% online', 'learning model'],
+    //       ['100% in-class', 'learning model']
+    //     ],
+    //     datasets: [{
+    //       data: [36, 7, 57],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var myChart16 = new Chart(ctx16, {
+    //   type: 'horizontalBar',
+    //   data: {
+    //     labels: [
+    //       ['Highly', 'Unlikely'], ['Unlikely'], ['Too Soon', 'To Say'], ['Likely'], ['Highly', 'Likely']
+    //     ],
+    //     datasets: [{
+    //       data: [7, 3, 5, 23, 52],
+    //       backgroundColor: barColors
+    //     }]
+    //   },
+    //   options: barOptions
+    // });
+
+    // var stackedChart1 = new Chart(ctx17, {
+    //   type: 'horizontalBar',
+    //   showTooltips : false,
+    //         showInlineValues : true,
+    //         centeredInllineValues : true,
+    //   data: {
+    //     labels: [
+    //       ['Real time lectures &', 'discussions using', 'video conferencing'], ['Online chatting', 'with classmates'], ['Online chatting', 'with faculty'], ['Taking scheduled', 'online tests and', 'exams']
+    //     ],
+    //     datasets: [{
+    //         label: '1 - Dislike',
+    //         backgroundColor: "#d9d9d9",
+    //         data: [28, 24, 22, 33],
+    //     }, {
+    //         label: '2',
+    //         backgroundColor: "#333",
+    //         data: [29, 34, 34, 27],
+    //     }, {
+    //         label: '3',
+    //         backgroundColor: "#e5166b",
+    //         data: [26, 27, 29, 24],
+    //     }, {
+    //         label: '4 - Like A Lot',
+    //         backgroundColor: "#934af4",
+    //         data: [17, 14, 15, 15],
+    //     }],
+    //   },
+    //   options: stackedOptions
+    // });
+
+    // var stackedChart2 = new Chart(ctx18, {
+    //   type: 'horizontalBar',
+    //   showTooltips : false,
+    //         showInlineValues : true,
+    //         centeredInllineValues : true,
+    //   data: {
+    //     labels: [
+    //       ['Real time lectures &', 'discussions using', 'video conferencing'], ['Online chatting', 'with classmates'], ['Online chatting', 'with faculty'], ['Taking scheduled', 'online tests and', 'exams']
+    //     ],
+    //     datasets: [{
+    //         label: '1 - Dislike',
+    //         backgroundColor: "#d9d9d9",
+    //         data: [27, 21, 27, 17],
+    //     }, {
+    //         label: '2',
+    //         backgroundColor: "#333",
+    //         data: [25, 34, 34, 33],
+    //     }, {
+    //         label: '3',
+    //         backgroundColor: "#e5166b",
+    //         data: [24, 31, 27, 33],
+    //     }, {
+    //         label: '4 - Like A Lot',
+    //         backgroundColor: "#934af4",
+    //         data: [24, 14, 12, 17],
+    //     }],
+    //   },
+    //   options: stackedOptions
+    // });
+
+	</script>
 
 </body>
 </html>
